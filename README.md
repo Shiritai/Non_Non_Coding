@@ -30,7 +30,7 @@ Java|JRE|JVM
 
 Certainly, my beloved **VSCode**!
 
-## Wallpaper ~~*(のんびりとプログラミングから、暢気な風が吹いた)*~~
+## Wallpaper ~~(のんびりとコーディングから、暢気な風が吹いた)~~
 
 > *Non non coding*
 
