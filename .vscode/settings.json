@@ -122,12 +122,14 @@
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "cSpell.words": [
+        "Heapify",
         "KRUSKAL",
         "clzl",
         "clzll",
         "ctzll",
         "donom",
         "jibun",
+        "nums",
         "parityl",
         "parityll",
         "popcountll"
