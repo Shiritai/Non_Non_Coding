@@ -132,7 +132,8 @@
         "nums",
         "parityl",
         "parityll",
-        "popcountll"
+        "popcountll",
+        "sudoko"
     ],
     "liveServer.settings.port": 5658, // 格式化時調整include的順序（按字母排序）
     "java.configuration.updateBuildConfiguration": "automatic",
