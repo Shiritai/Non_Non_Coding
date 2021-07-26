@@ -1,12 +1,22 @@
+package Java;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
-import java.util.Stack;
-import java.util.function.Function;
 
-import Java.Board;
-import Java.Trie;
-import Java.Walker;
+/*
+ * @lc app=leetcode id=212 lang=java
+ *
+ * [212] Word Search II
+ */
+
+// @lc code=start
+
+/* 
+ * Authored by Eroiko at 2021/07/26
+ * Time : beats 5 %
+ * Space : beats 35.6 %
+ */
 
 class Trie {
     protected class Node {
@@ -109,7 +119,6 @@ class Walker {
     
     int vInd, hInd;
     Board box;
-    // String list;
     ArrayList<Coo> list;
 
     public Walker(Board box, int vInd, int hInd){
@@ -118,17 +127,14 @@ class Walker {
         this.hInd = hInd;
         this.list = new ArrayList<>();
         this.list.add(new Coo(vInd, hInd));
-        // this.list = Character.toString(box.at(vInd, hInd));
     }
 
-    // public Walker(Board box, int vInd, int hInd, String list){
     public Walker(Board box, int vInd, int hInd, ArrayList<Coo> list){
         this.box = box;
         this.vInd = vInd;
         this.hInd = hInd;
         this.list = new ArrayList<>(list);
         this.list.add(new Coo(vInd, hInd));
-        // this.list = list + box.at(vInd, hInd);
     }
 
     public List<Walker> move(char target){
@@ -160,20 +166,18 @@ class Walker {
 
     @Override
     public String toString(){
-        var tmp = new StringBuilder();
+        var tmp = new StringBuilder(list.size());
         list.forEach(l -> tmp.append(box.at(l.v, l.h)));
         return tmp.toString();
     }
-    // public String toString(){ return list; }
 }
 
-public class Tmp {
-
+class Solution {
     public List<String> findWords(char [][] board, String [] words) {
         var trie = new Trie();
         for (var w : words){ trie.add(w); }
 
-        var res = new ArrayList<String>();
+        var res = new HashSet<String>();
         var bd = new Board(board, true);
         
         int vLen = board.length, hLen = board[0].length;
@@ -185,10 +189,10 @@ public class Tmp {
                 walkBoard(res, node, bd.getWalker(i, j));
             }
         }
-        return res;
+        return new ArrayList<>(res);
     }
 
-    public void walkBoard(ArrayList<String> res, Trie.Node from, Walker walker){
+    public void walkBoard(HashSet<String> res, Trie.Node from, Walker walker){
         if (from.isWord){
             res.add(walker.toString());
         }
@@ -199,18 +203,6 @@ public class Tmp {
             }
         });
     }
-
-    public static void main(String [] args){
-        var board = new char [][]{
-            {'o', 'a', 'a', 'n'},
-            {'e', 't', 'a', 'e'},
-            {'i', 'h', 'k', 'r'},
-            {'i', 'f', 'l', 'v'}
-        };
-        var words = new String []{
-            "oath","pea","eat","rain"
-        };
-        var res = (new Tmp()).findWords(board, words);
-        res.forEach(System.out::println);
-    }
 }
+// @lc code=end
+
