@@ -118,7 +118,11 @@
         "cstdalign": "cpp",
         "cstdbool": "cpp",
         "ctgmath": "cpp",
-        "string_view": "c"
+        "string_view": "c",
+        "memory_resource": "cpp",
+        "optional": "cpp",
+        "ctype.h": "c",
+        "stdlib.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "cSpell.words": [

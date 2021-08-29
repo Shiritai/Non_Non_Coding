@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Screen_Locking_Patterns",
+            "request": "launch",
+            "mainClass": "Java.Screen_Locking_Patterns",
+            "projectName": "Non_Non_Coding_46e414c7"
+        },
+        {
+            "type": "java",
+            "name": "Launch The_Alpinist",
+            "request": "launch",
+            "mainClass": "Java.The_Alpinist",
+            "projectName": "Non_Non_Coding_46e414c7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Shortest_Path",
+            "request": "launch",
+            "mainClass": "Java.Shortest_Path",
+            "projectName": "Non_Non_Coding_46e414c7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Can_You_Reach_The_Exit",
+            "request": "launch",
+            "mainClass": "Java.Can_You_Reach_The_Exit",
+            "projectName": "Non_Non_Coding_46e414c7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Java.Test",
+            "projectName": "Non_Non_Coding_46e414c7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Next_smaller_number_with_the_same_digits",
+            "request": "launch",
+            "mainClass": "Java.Next_smaller_number_with_the_same_digits",
+            "projectName": "Non_Non_Coding_46e414c7"
+        },
+        {
+            "type": "java",
+            "name": "Launch TCP",
+            "request": "launch",
+            "mainClass": "Java.TCP",
+            "projectName": "Non_Non_Coding_46e414c7"
+        },
+        {
+            "type": "java",
             "name": "Launch Tmp",
             "request": "launch",
             "mainClass": "Tmp",

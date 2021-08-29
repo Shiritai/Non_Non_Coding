@@ -10,7 +10,7 @@
  * Time : beats 100 %
  * Space : beats 65.6 %
  */
-
+# include <stdio.h>
 int myAtoi(char * s){
     int res = 0, sign = 0; // sign == 0 : positive
     while (* s == ' ') ++s;
