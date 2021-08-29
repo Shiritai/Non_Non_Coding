@@ -4,7 +4,7 @@
 
 The place to record my OJ practicing history.
 
-Mostly on [CodeWars](https://www.codewars.com) and [LeetCode](https://leetcode.com/), using C, C++ and Java.
+Mostly on [CodeWars](https://www.codewars.com) and [LeetCode](https://leetcode.com/), using C, C++ and Java. (Sometimes TS or else)
 
 ## Environment
 
