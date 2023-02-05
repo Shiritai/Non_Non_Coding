@@ -10,6 +10,10 @@ using namespace std;
 
 class Solution {
 public:
+    /** 
+    * Accept: runtime 100%
+    *          memory 12.28%
+    */
     int specialArray(vector<int>& arr) {
         const size_t sz = arr.size();           // O(1)
         vector<int> bucket(sz + 1, 0);          // O(1)
